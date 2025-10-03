@@ -1,0 +1,53 @@
+Battle.cs
+
+	Battle trainer1, trainer2, isEncounter = False:
+		båda säger sin catchphrase
+	
+		trainer1Pokemon första i listan
+		trainer2Pokemon första i listan
+		
+		while True:
+		
+		om pokemon död, inga kvar
+			andra vinner
+		
+		om pokemon död välj ny
+		
+		
+		båda trainers väljer vad dom ska göra
+		fight, pokemon eller run om möjligt(isEncounter)
+		
+		om båda fight
+			jämför speed, den med högre börjar
+			kör CalculateDamage
+			om andra dör, next round
+		
+		om 1 byt och andra fight
+			byt pokemon
+			andra attack den med CalculateDamage
+		
+		om båda byta
+			byt pokemon
+			
+			
+		
+	
+	effectivenessChart[,] mata in både typer och få ut effect
+	
+	CalculateDamage attacker, defender, move:
+		damage = 0
+		if move.isSpecial:
+			damage = move.atkPower * ( attacker.spAtk / defender.spDef)
+			damage /= 20
+	
+		else:
+			damage = move.atkPower * ( attacker.atk / defender.def)
+			damage /= 20
+			
+		
+		if attacker.type == move.type:
+			damage *= 1.5
+			
+		damage *= effectivenessChart[move.type, defender.type]
+		
+		return damage
