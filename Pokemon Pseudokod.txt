@@ -1,0 +1,43 @@
+Class Pokemon:
+	name : String
+	type : Type(enum)
+	ability : Ability(enum)
+	moves : List[Move]
+	hp : int
+	atk :int
+	sp_atk : int
+	def : int
+	sp_def : int
+	speed : int
+	
+	
+
+Class Move:
+	Name : String
+	pp : int
+	Type : Type
+	AtkPower : int
+	SelfAttack : int
+	acc : int
+	isSpecial : bool <--- ny
+	
+enum Type:
+	insert types here
+
+enum Ability:
+	hover tpy
+	shockres
+STOR BOKSTAV I ALLA PROPERTIES!
+
+
+Class Trainer:
+	Name : string
+	Age : int
+	Gender : bool
+	Catchphrase : string
+	Occupation : string
+	Team : List<Pokemon>
+	
+	AddPokemon(Pokemon)
+		MAX 6st
+	
