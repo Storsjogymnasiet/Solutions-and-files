@@ -15,7 +15,7 @@ while True:
     print("3. Ändra priset på vara")
     print("4. Fylla på vara")
     print("5. Sälja en vara")
-    print("6. Visa total intäkter")
+    print("6. Visa intäkter")
     print("q. Stänga av")
 
     choice = input()
