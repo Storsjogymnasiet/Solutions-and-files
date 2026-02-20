@@ -1,3 +1,7 @@
+Ladda hem Raspberry Pi Imager
+https://downloads.raspberrypi.com/imager/imager_latest.exe
+
+
 Flasha Raspberry pi OS
 välj
 	Device -> Raspberry Pi zero
