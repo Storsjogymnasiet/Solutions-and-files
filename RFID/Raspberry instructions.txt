@@ -71,13 +71,17 @@ Koppla RFID scanner till raspberry
 		koppla INTE något i 5v pin !!!
 	Dubbel OBS! stäng av och koppla ur raspberry pi innan ni börjar!
 	
-    SDA connects to Pin 24.
-    SCK connects to Pin 23.
-    MOSI connects to Pin 19.
-    MISO connects to Pin 21.
-	IRQ connects to nothing.
-    GND connects to Pin 6.
-    RST connects to Pin 22.
-    3.3v connects to Pin 1.
+	+-----------+--------------+------------+
+	|  Scanner  | Connection   |Raspberry Pi|
+	+-----------+--------------+------------+
+	|  SDA      | ---------->  |  Pin 24    |
+	|  SCK      | ---------->  |  Pin 23    |
+	|  MOSI     | ---------->  |  Pin 19    |
+	|  MISO     | ---------->  |  Pin 21    |
+	|  IRQ      | ---------->  |  None      |
+	|  GND      | ---------->  |  Pin 6     |
+	|  RST      | ---------->  |  Pin 22    |
+	|  3.3v     | ---------->  |  Pin 1     |
+	+-----------+--------------+------------+
 	
 	Se bild för pinout https://peppe8o.com/wp-content/uploads/2020/09/Raspberry-PI-Zero-Pinout-schema.jpg
