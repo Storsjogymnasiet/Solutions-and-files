@@ -3,6 +3,8 @@ https://downloads.raspberrypi.com/imager/imager_latest.exe
 
 
 Flasha Raspberry pi OS
+Stoppa in SD kortet
+Starta Pi Imager
 välj
 	Device -> Raspberry Pi zero
 	OS -> Raspberry Pi Os (other) -> Raspberry Pi OS Lite (32-bit)
