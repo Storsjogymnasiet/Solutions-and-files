@@ -9,6 +9,7 @@ välj
 	Device -> Raspberry Pi zero
 	OS -> Raspberry Pi Os (other) -> Raspberry Pi OS Lite (32-bit)
 	Storage -> Välj SDHC Card
+	!!!OBS!!! ⚠️Vad du än gör välj INTE datorns hårddisk, du riskerar att paja datorn.
 	Customisation -> 
 		Hostname -> Sätt Hostname till zero 
 		Localisation -> Sätt allt till svenskt
@@ -32,6 +33,7 @@ vänta ca 3-4 minuter
 klura ut ip ?
 
 SSH in på raspberry
+	koppla upp er på leijon nätet
 	öppna terminalen
 	kör
 		ssh pi@ip address här
