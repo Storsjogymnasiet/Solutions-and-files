@@ -19,6 +19,8 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
+    await bot.process_commands(message)
+
 # Ditt nya kommando ,hej
 @bot.command()
 async def hej(ctx):
