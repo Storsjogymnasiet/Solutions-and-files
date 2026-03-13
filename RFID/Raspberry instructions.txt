@@ -36,7 +36,7 @@ SSH in på raspberry
 	koppla upp er på leijon nätet
 	öppna terminalen
 	kör
-		ssh pi@ip address här
+		ssh pi@<ip address här>
 	om den frågar om fingerprint
 	skriv
 		yes
@@ -44,11 +44,19 @@ SSH in på raspberry
 	
 	Uppkopplad!
 
+###
+Nu är resten av instruktionerna på raspberry pi
+##
+
 Slå på SPI
 	kör sudo raspi-config ->
 	3 Interface Options ->
 	I4 SPI Enable ->
 	Finish
+
+Uppdatera raspberry pi
+	sudo apt update
+	sudo apt upgrade
 
 Förbered och ladda hem test programmet
 	Skapa rfid mappen:
