@@ -1,0 +1,26 @@
+name: Deploy to Central Pages Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout privat repo
+        uses: actions/checkout@v4
+
+      # (Valfritt) Om koden behöver byggas först (t.ex. npm run build), kör det steget här:
+      # - name: Build site
+      #   run: npm run build
+
+      - name: Deploy till centralt repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: Storsjogymnasiet/Student-Sidor
+          publish_dir: . # Mappen där dina färdiga HTML/CSS-filer ligger
+          destination_dir: ${{ github.event.repository.name }} # Skapar en undermapp med repots namn
+          keep_files: true # VIKTIGT: Förhindrar att detta repo raderar de andra 19 reposidoriernas filer!
